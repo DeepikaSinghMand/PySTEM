@@ -77,6 +77,14 @@ a:hover {
   color: var(--text);
 } */
 
+/* .brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text);
+  padding: 8px 10px 8px 0;
+} */
+
 .brand {
   display: flex;
   align-items: center;
