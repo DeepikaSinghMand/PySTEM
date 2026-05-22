@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PySTEM Institute </title> 
-  <meta name="description" content="PySTEM Institute offers Ontario-aligned tutoring in Physics, Chemistry, Mathematics, Python, AI and Machine Learning for K–12 students." />
+  <title>PySTEM INSTITUTE</title>
+  <meta name="description" content="PySTEM Institute offers Ontario curriculum-aligned tutoring in Physics, Chemistry, Mathematics, Python, AI and Machine Learning for K-12 students." />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
 </head>
+
 <body>
   <header class="site-header">
-    <nav class="navbar">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">Py</span>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="PySTEM Institute homepage">
+        <img class="brand-logo" src="images/logo.png" alt="PySTEM Institute logo" />
         <span>
           <strong>PySTEM Institute</strong>
-          <!-- <small>Ontario STEM Learning</small> -->
         </span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
         ☰
       </button>
 
       <div class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#courses">Courses</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#trial">Free Trial</a>
+        <a href="#learning-plans">Learning Plans</a>
+        <a href="#resources">Resources</a>
+        <a href="#teaching-plans">Teaching Plans</a>
+        <a href="#faqs">FAQs</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -35,51 +38,59 @@
   <main>
     <section class="hero" id="home">
       <div class="hero-content">
-        <p class="eyebrow">K–12 Ontario School Board · In-Person & Online · Ontario, Canada</p>
-        <h1>Where Logic Feeds the Mind and STEM Keeps the Future Bright </h1>
+        <p class="eyebrow">Ontario Curriculum Support · In-Person & Online · K–12 STEM Learning</p>
+
+        <h1>Build Strong STEM &amp; AI Foundations for Future Ready Minds</h1>
+
         <p class="hero-subtitle">
-          Ontario-aligned tutoring in Physics, Chemistry, Mathematics, Python, AI and Machine Learning
-          for school students who want strong foundations and future-ready skills.
+          Ontario curriculum-aligned tutoring in Physics, Chemistry, Mathematics, Python, AI &amp; Machine Learning for students who want confidence in school and skills for tomorrow.
         </p>
 
         <div class="hero-actions">
-          <a class="btn primary" href="#trial">Book a Free Trial</a>
-          <a class="btn secondary" href="#courses">Explore Courses</a>
+          <a class="btn primary" href="#trial">Book a Session</a>
+          <a class="btn secondary" href="courses.html">Explore Course Details</a>
         </div>
 
-        <div class="trust-row">
-          <span>UofT ML Research Expert</span>
-          <span>IIT Graduate Faculty</span>
-          <span>OCT Certified Science Educators</span>
+        <div class="trust-row" aria-label="Program highlights">
+          <span>UofT ML Research Experience</span>
+          <span>IIT Graduate Educator</span>
+          <span>Science & Math Teaching Expertise</span>
         </div>
       </div>
 
       <aside class="hero-card">
-        <h2>Programs Offered</h2>
-        <ul>
+        <p class="card-kicker">Programs Offered</p>
+        <h2>School Support + Future Skills</h2>
+
+        <ul class="check-list">
           <li>Physics · Grades 7–12</li>
           <li>Chemistry · Grades 7–12</li>
           <li>Mathematics · Grades K–12</li>
-          <li>Python · Grades 9–12</li>
-          <li>AI & ML · Grades 11–12</li>
+          <li>Python · Grades 6–12</li>
+          <li>AI & ML · Grades 9–12</li>
         </ul>
-        <p class="highlight">First trial session is free.</p>
+
+        <!-- <p class="highlight">Start with a learning-path discussion.</p> -->
+        <p class="highlight">First trial session is free. </p>
       </aside>
     </section>
 
-    <section class="stats">
+    <section class="stats" aria-label="Program statistics">
       <div>
         <strong>K–12</strong>
-        <span>All Grade Levels</span>
+        <span>Ontario Students</span>
       </div>
+
       <div>
         <strong>5</strong>
         <span>Subjects Covered</span>
       </div>
+
       <div>
         <strong>1-on-1</strong>
         <span>& Group Sessions</span>
       </div>
+
       <div>
         <strong>100%</strong>
         <span>Curriculum-Aligned</span>
@@ -89,9 +100,9 @@
     <section class="section" id="courses">
       <div class="section-heading">
         <p class="eyebrow">Course Sections</p>
-        <h2>STEM courses designed for Ontario students</h2>
+        <h2>Ontario curriculum support with an advanced STEM edge</h2>
         <p>
-          Choose subject support, advanced enrichment, exam preparation, or a future-ready coding and AI pathway.
+          Choose school-subject support, exam preparation, enrichment, or a future-ready coding and AI pathway.
         </p>
       </div>
 
@@ -100,97 +111,241 @@
           <span class="course-number">01</span>
           <h3>Physics</h3>
           <p class="grade">Grades 7–12</p>
-          <ul>
-            <li>Mechanics & Kinematics</li>
-            <li>Thermodynamics</li>
-            <li>Electricity & Magnetism</li>
-            <li>Optics & Waves</li>
-          </ul>
-          <a href="courses.html#physics">View Physics details →</a>
+          <p>Mechanics, energy, electricity, waves, optics and senior physics problem solving.</p>
+          <a href="courses.html#physics">View Subject Details →</a>
         </article>
 
         <article class="course-card">
           <span class="course-number">02</span>
           <h3>Chemistry</h3>
           <p class="grade">Grades 7–12</p>
-          <ul>
-            <li>Organic & Inorganic Chemistry</li>
-            <li>Biochemistry</li>
-            <li>Lab Skills & Safety</li>
-            <li>Stoichiometry</li>
-          </ul>
-          <a href="courses.html#chemistry">View Chemistry details →</a>
+          <p>Matter, bonding, periodic trends, reactions, stoichiometry and lab reasoning.</p>
+          <a href="courses.html#chemistry">View Subject Details →</a>
         </article>
 
         <article class="course-card">
           <span class="course-number">03</span>
           <h3>Mathematics</h3>
           <p class="grade">Grades K–12</p>
-          <ul>
-            <li>Algebra & Calculus</li>
-            <li>Trigonometry</li>
-            <li>Statistics & Probability</li>
-            <li>Matrices & Vectors</li>
-          </ul>
-          <a href="courses.html#mathematics">View Mathematics details →</a>
+          <p>Algebra, functions, trigonometry, calculus, vectors, probability and statistics.</p>
+          <a href="courses.html#mathematics">View Subject Details →</a>
         </article>
 
         <article class="course-card">
           <span class="course-number">04</span>
-          <h3>AI & Machine Learning</h3>
-          <p class="grade">Grades 9–12</p>
-          <ul>
-            <li>Data Science Foundations</li>
-            <li>Neural Networks</li>
-            <li>Deep Learning Concepts</li>
-            <li>Basics to Advanced Projects</li>
-          </ul>
-          <a href="courses.html#ai-ml">View AI & ML details →</a>
+          <h3>Python</h3>
+          <p class="grade">Grades 6–12</p>
+          <p>Programming basics, data structures, plotting, NumPy, Pandas and guided projects.</p>
+          <a href="courses.html#python">View Subject Details →</a>
         </article>
 
         <article class="course-card">
           <span class="course-number">05</span>
-          <h3>Python</h3>
-          <p class="grade">Grades 6–12</p>
-          <ul>
-            <li>Programming Fundamentals</li>
-            <li>Data Structures</li>
-            <li>NumPy & Pandas</li>
-            <li>Real-World Projects</li>
-          </ul>
-          <a href="courses.html#python">View Python details →</a>
+          <h3>AI & ML</h3>
+          <p class="grade">Grades 9–12</p>
+          <p>Data science, regression, classification, neural-network ideas and guided projects.</p>
+          <a href="courses.html#ai-ml">View Subject Details →</a>
         </article>
       </div>
     </section>
 
-    <section class="section split" id="why-us">
+    <section class="section split" id="learning-plans">
       <div>
-        <p class="eyebrow">What We Offer</p>
-        <h2>Personalized academic support with advanced STEM pathways</h2>
+        <p class="eyebrow">Learning Plans</p>
+        <h2>Structured learning plans, not random homework help</h2>
         <p>
-          PySTEM Institute combines Ontario curriculum support with modern computational learning.
-          Students can strengthen school performance while gradually building skills in coding, data,
-          scientific reasoning and AI.
+          Each student begins with a short diagnostic discussion. We build a clear weekly plan around grade level, school units, learning gaps, upcoming assessments and long-term STEM goals.
         </p>
       </div>
 
-      <div class="offer-grid">
-        <div class="offer-item">1-on-1 & Group</div>
-        <div class="offer-item">Ontario-Aligned</div>
-        <div class="offer-item">Exam Prep</div>
-        <div class="offer-item">Adaptive Learning</div>
-        <div class="offer-item">Flexible Schedule</div>
-        <div class="offer-item">Expert Tutors</div>
+      <div class="process-grid">
+        <div class="process-card">
+          <span>1</span>
+          <h3>Diagnostic Start</h3>
+          <p>Identify strengths, gaps, school units and upcoming assessments.</p>
+        </div>
+
+        <div class="process-card">
+          <span>2</span>
+          <h3>Weekly Roadmap</h3>
+          <p>Teach concepts, solve guided examples and correct mistakes early.</p>
+        </div>
+
+        <div class="process-card">
+          <span>3</span>
+          <h3>Practice System</h3>
+          <p>Use worksheets, formula sheets, revision tasks and skill checklists.</p>
+        </div>
+
+        <div class="process-card">
+          <span>4</span>
+          <h3>Progress Review</h3>
+          <p>Share clear feedback with next-step recommendations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="section-heading">
+        <p class="eyebrow">Resources</p>
+        <h2>Study resources that support every lesson</h2>
+        <p>
+          Learning is supported by roadmaps, topic checkpoints and student-friendly study materials.
+        </p>
+      </div>
+
+      <div class="resource-grid">
+        <div class="resource-card">
+          <h3>Course Roadmaps</h3>
+          <p>Grade-level topic sequence for Physics, Chemistry, Mathematics, Python and AI/ML.</p>
+        </div>
+
+        <div class="resource-card">
+          <h3>Formula & Reference Sheets</h3>
+          <p>Quick-review sheets for equations, units, graphing, periodic table use and calculator skills.</p>
+        </div>
+
+        <div class="resource-card">
+          <h3>Worksheets & Practice Sets</h3>
+          <p>Guided examples, independent questions and review tasks for major units.</p>
+        </div>
+
+        <div class="resource-card">
+          <h3>Lab & Project Guidance</h3>
+          <p>Guidance for lab reports, data analysis, coding projects and science communication.</p>
+        </div>
+
+        <div class="resource-card">
+          <h3>Study Skills</h3>
+          <p>Simple systems for revision, exam planning, mistake tracking and confidence building.</p>
+        </div>
+
+        <div class="resource-card">
+          <h3>Parent Updates</h3>
+          <p>Clear feedback on progress, next steps and suggested practice after each learning cycle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="teaching-plans">
+      <div class="section-heading">
+        <p class="eyebrow">Teaching Plans</p>
+        <h2>Flexible plans for different learning goals</h2>
+        <p>
+          Choose the pathway that fits the student’s current goal. Schedule, session format and subject combination can be finalized after the initial discussion.
+        </p>
+      </div>
+
+      <div class="plan-grid">
+        <article class="plan-card">
+          <p class="plan-label">Foundation</p>
+          <h3>Concept Builder</h3>
+          <p>For students who need steady support in one school subject.</p>
+
+          <ul class="check-list">
+            <li>1 subject focus</li>
+            <li>Weekly concept review</li>
+            <li>Homework support</li>
+            <li>Basic test preparation</li>
+          </ul>
+
+         <a class="btn secondary" href="#trial">Ask for details</a> 
+        </article>
+
+        <article class="plan-card popular">
+          <p class="plan-label">Most Useful</p>
+          <h3>School Success</h3>
+          <p>For students preparing for quizzes, unit tests and semester exams.</p>
+
+          <ul class="check-list">
+            <li>1–2 subjects</li>
+            <li>Practice worksheets</li>
+            <li>Unit review sessions</li>
+            <li>Parent progress updates</li>
+          </ul>
+
+          <!-- <a class="btn primary" href="#trial">Book free trial</a> -->
+        <a class="btn secondary" href="#trial">Ask for details</a>
+        </article>
+
+        <article class="plan-card">
+          <p class="plan-label">Advanced</p>
+          <h3>Exam & Enrichment</h3>
+          <p>For senior students aiming for stronger grades and advanced STEM readiness.</p>
+
+          <ul class="check-list">
+            <li>Grade 11–12 focus</li>
+            <li>Exam strategy</li>
+            <li>Challenging problems</li>
+            <li>University-prep foundations</li>
+          </ul>
+
+         <a class="btn secondary" href="#trial">Ask for details</a>
+        </article>
+
+        <article class="plan-card">
+          <p class="plan-label">Project Pathway</p>
+          <h3>Python + AI Lab</h3>
+          <p>For students interested in programming, data science and ML projects.</p>
+
+          <ul class="check-list">
+            <li>Python fundamentals</li>
+            <li>Mini projects</li>
+            <li>Data visualization</li>
+            <li>AI/ML starter portfolio</li>
+          </ul>
+
+          <a class="btn secondary" href="#trial">Ask for details</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faqs">
+      <div class="section-heading">
+        <p class="eyebrow">FAQs</p>
+        <h2>Common Parent Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <button class="faq-item" type="button">
+          <span>Do you follow the Ontario curriculum?</span>
+          <strong>+</strong>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. School-subject support is aligned with Ontario grade-level expectations and common Grade 9–12 course pathways.</p>
+        </div>
+
+        <button class="faq-item" type="button">
+          <span>Do you offer both in-person and online classes?</span>
+          <strong>+</strong>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Availability can be discussed during the free trial or initial parent conversation.</p>
+        </div>
+
+        <button class="faq-item" type="button">
+          <span>Is Python required before AI and ML?</span>
+          <strong>+</strong>
+        </button>
+        <div class="faq-answer">
+          <p>For the AI/ML pathway, students should either know basic Python or begin with the Python foundation module first.</p>
+        </div>
+
+        <button class="faq-item" type="button">
+          <span>How are students placed into the right plan?</span>
+          <strong>+</strong>
+        </button>
+        <div class="faq-answer">
+          <p>Placement is based on grade level, school subject, current challenges, goals and whether the student needs support, enrichment or projects.</p>
+        </div>
       </div>
     </section>
 
     <section class="cta" id="trial">
       <div>
-        <p class="eyebrow">Free Trial Session</p>
-        <h2>Unlock your child’s full academic potential.</h2>
+        <h2>Start with a learning-path discussion.</h2>
         <p>
-          Book a free first session and discuss the best learning path for Physics, Chemistry,
-          Mathematics, Python, AI or Machine Learning.
+          Book a free session and discuss the best pathway for Physics, Chemistry, Mathematics, Python, AI or Machine Learning.
         </p>
       </div>
 
@@ -203,20 +358,20 @@
       <div>
         <p class="eyebrow">Contact Us</p>
         <h2>Get in touch</h2>
-        <!-- <p>Replace the sample phone number and form link before publishing.</p> -->
+        <p>Use the registration form or email us for course details, schedule and questions.</p>
       </div>
 
       <div class="contact-card">
         <p><strong>Email:</strong> <a href="mailto:info@pystem.ca">info@pystem.ca</a></p>
-        <!-- <p><strong>Phone:</strong> <a href="tel:+14165550123">(416) 555-0123</a></p> -->
         <p><strong>Website:</strong> <a href="https://www.pystem.ca">www.pystem.ca</a></p>
         <p><strong>Location:</strong> Ontario, Canada</p>
+        <p><strong>Format:</strong> In-person and online sessions</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>PySTEM Institute · Advanced Python, AI & STEM Education · Ontario, Canada</p>
+    <p>PySTEM Institute · Physics · Chemistry · Mathematics · Python · AI & Machine Learning</p>
     <p>© <span id="year"></span> PySTEM Institute. All rights reserved.</p>
   </footer>
 
