@@ -9,6 +9,83 @@
 
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="images/logo.png" />
+  <style>
+    /* ── Prerequisites bar – AI & ML section ── */
+    .prereq-bar {
+      margin: 1.5rem 0 2rem;
+      padding: 1.1rem 1.4rem;
+      background: rgba(32, 178, 170, 0.06);
+      border: 1px solid rgba(32, 178, 170, 0.25);
+      border-radius: 0.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.6rem 1rem;
+    }
+
+    .prereq-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #20b2aa;
+      white-space: nowrap;
+    }
+
+    .prereq-pills {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .prereq-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.28rem 0.75rem;
+      border: 1px solid rgba(32, 178, 170, 0.5);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #a8d8d5;
+      background: rgba(32, 178, 170, 0.08);
+      white-space: nowrap;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .prereq-pill:hover {
+      background: rgba(32, 178, 170, 0.16);
+      border-color: rgba(32, 178, 170, 0.8);
+    }
+
+    .prereq-icon {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      color: #20b2aa;
+    }
+
+    .prereq-note {
+      font-size: 0.75rem;
+      color: #7a9ea0;
+      margin: 0;
+      flex-basis: 100%;
+      padding-top: 0.2rem;
+    }
+
+    .prereq-note a {
+      color: #20b2aa;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    @media (max-width: 600px) {
+      .prereq-bar { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
 </head>
 
 <body>
@@ -232,6 +309,29 @@
         </div>
       </div>
 
+      <div class="prereq-bar" aria-label="Course prerequisites">
+        <span class="prereq-label">Prerequisites:</span>
+        <ul class="prereq-pills">
+          <li class="prereq-pill">
+            <svg class="prereq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4-4 4 4M4 10l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Python Basics
+          </li>
+          <li class="prereq-pill">
+            <svg class="prereq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><polyline points="2,12 5,7 8,9 11,4 14,6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Graph Interpretation
+          </li>
+          <li class="prereq-pill">
+            <svg class="prereq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><text x="2" y="12" font-size="11" fill="currentColor" font-family="serif" font-style="italic">∑</text></svg>
+            School-Level Mathematics
+          </li>
+          <li class="prereq-pill">
+            <svg class="prereq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><text x="1" y="12" font-size="10" fill="currentColor" font-family="serif" font-style="italic">dy/dx</text></svg>
+            Differential Equations
+          </li>
+        </ul>
+        <p class="prereq-note">New to Python or math? Start with our <a href="#python">Python</a> or <a href="#mathematics">Mathematics</a> course first.</p>
+      </div>
+
       <div class="detail-grid three-col">
         <div>
           <h3>Core Topics</h3>
@@ -314,6 +414,7 @@
         <p class="eyebrow">Ready to start?</p>
         <h2>Book your first learning discussion.</h2>
         <p>Discuss the right course level, subject combination and learning plan for your child.</p>
+        <p>Or call us: <a href="tel:+1 (437) 267-7675" style="color:var(--accent);">+1 (437) 267-7675</a></p>
       </div>
 
       <a class="btn primary" href="https://forms.gle/ff7WNuCKGfLBvp7D9" target="_blank" rel="noopener">
@@ -325,7 +426,8 @@
   <footer class="footer">
     <p>
       PySTEM Institute · www.pystem.ca ·
-      <a href="mailto:info@pystem.ca">info@pystem.ca</a>
+      <a href="mailto:info@pystem.ca">info@pystem.ca</a> ·
+       <a href="tel:+1 (437) 267-7675">+1 (437) 267-7675</a>
       · Ontario, Canada
     </p>
     <p>© <span id="year"></span> PySTEM Institute. All rights reserved.</p>
